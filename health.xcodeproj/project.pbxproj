@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		84CEFE9A2E07A04400F3F8E1 /* HealthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CEFE9A2E07A04400F3F8E1 /* health.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = health.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		84CEFE9C2E07A04400F3F8E1 /* HealthDemo */ = {
+		84A6F8BF2E13324700F883DE /* HealthDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = HealthDemo;
 			sourceTree = "<group>";
@@ -32,7 +32,7 @@
 		84CEFE912E07A04300F3F8E1 = {
 			isa = PBXGroup;
 			children = (
-				84CEFE9C2E07A04400F3F8E1 /* HealthDemo */,
+				84A6F8BF2E13324700F883DE /* HealthDemo */,
 				84CEFE9B2E07A04400F3F8E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		84CEFE9B2E07A04400F3F8E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84CEFE9A2E07A04400F3F8E1 /* HealthDemo.app */,
+				84CEFE9A2E07A04400F3F8E1 /* health.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84CEFE992E07A04300F3F8E1 /* HealthDemo */ = {
+		84CEFE992E07A04300F3F8E1 /* health */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84CEFEA52E07A04A00F3F8E1 /* Build configuration list for PBXNativeTarget "HealthDemo" */;
+			buildConfigurationList = 84CEFEA52E07A04A00F3F8E1 /* Build configuration list for PBXNativeTarget "health" */;
 			buildPhases = (
 				84CEFE962E07A04300F3F8E1 /* Sources */,
 				84CEFE972E07A04300F3F8E1 /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				84CEFE9C2E07A04400F3F8E1 /* HealthDemo */,
+				84A6F8BF2E13324700F883DE /* HealthDemo */,
 			);
-			name = HealthDemo;
+			name = health;
 			packageProductDependencies = (
 			);
 			productName = HealthDemo;
-			productReference = 84CEFE9A2E07A04400F3F8E1 /* HealthDemo.app */;
+			productReference = 84CEFE9A2E07A04400F3F8E1 /* health.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 84CEFE952E07A04300F3F8E1 /* Build configuration list for PBXProject "HealthDemo" */;
+			buildConfigurationList = 84CEFE952E07A04300F3F8E1 /* Build configuration list for PBXProject "health" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84CEFE992E07A04300F3F8E1 /* HealthDemo */,
+				84CEFE992E07A04300F3F8E1 /* health */,
 			);
 		};
 /* End PBXProject section */
@@ -249,10 +249,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthDemo/HealthDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F783FQ9CBT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app shares health data to help you track";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app writes health data to help you track";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -263,7 +268,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.demo.HealthDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = org.demo.HealthCare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -276,10 +281,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthDemo/HealthDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F783FQ9CBT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app shares health data to help you track";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app writes health data to help you track";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -290,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.demo.HealthDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = org.demo.HealthCare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84CEFE952E07A04300F3F8E1 /* Build configuration list for PBXProject "HealthDemo" */ = {
+		84CEFE952E07A04300F3F8E1 /* Build configuration list for PBXProject "health" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84CEFEA32E07A04A00F3F8E1 /* Debug */,
@@ -310,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84CEFEA52E07A04A00F3F8E1 /* Build configuration list for PBXNativeTarget "HealthDemo" */ = {
+		84CEFEA52E07A04A00F3F8E1 /* Build configuration list for PBXNativeTarget "health" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84CEFEA62E07A04A00F3F8E1 /* Debug */,
