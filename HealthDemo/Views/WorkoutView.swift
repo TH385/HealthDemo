@@ -77,6 +77,6 @@ struct WorkoutView: View {
 	}
 }
 
-#Preview {
+#Preview(traits: .sizeThatFitsLayout) {
 	WorkoutView(states: States())
 }

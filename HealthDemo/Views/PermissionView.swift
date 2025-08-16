@@ -35,6 +35,6 @@ struct PermissionView: View {
     }
 }
 
-#Preview {
+#Preview(traits: .sizeThatFitsLayout) {
 	PermissionView(states:States())
 }

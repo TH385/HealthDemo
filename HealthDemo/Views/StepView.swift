@@ -41,6 +41,6 @@ struct StepView: View {
 	}
 }
 
-#Preview {
+#Preview(traits: .sizeThatFitsLayout) {
 	StepView(states:States())
 }

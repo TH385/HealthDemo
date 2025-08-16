@@ -47,6 +47,6 @@ struct SleepView: View {
 	}
 }
 
-#Preview {
+#Preview(traits: .sizeThatFitsLayout) {
 	SleepView(states:States())
 }
